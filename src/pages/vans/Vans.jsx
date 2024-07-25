@@ -13,7 +13,7 @@ export default function Vans() {
 
   const vanAll = vans.map((van) => (
     <div key={van.id} className="van-tile">
-      <Link to={`/vans/${van.id}`} element={<VansDetail />}>
+      <Link to={`/vans/${van.id}`}>
         <img
           src={van.imageUrl}
           alt={`Image of the ${van.name}`}
